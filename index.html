@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GBA Web Player</title>
+  <title>Mario Tennis - Power Tour</title>
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      background: #000;
-      overflow: hidden;
+      background-color: #000;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }
     #game-container {
       width: 100%;
@@ -37,16 +37,13 @@
     window.EJS_player = '#game';
     window.EJS_core = 'gba';
 
-    // Update this to match your exact file name and path
-    window.EJS_gameUrl = 'roms/game.gba';
+    // Points directly to your uploaded ROM
+    window.EJS_gameUrl = 'Mario Tennis - Power Tour (USA).gba';
 
-    // If your fork has a local data/ folder, keep this as 'data/'.
-    // If not, use the official CDN link below:
+    // Emulator assets from the stable CDN
     window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
-
     window.EJS_startOnLoaded = true;
   </script>
-  <!-- Main emulator script loader -->
   <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 </body>
 </html>
